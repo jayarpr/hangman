@@ -42,7 +42,11 @@ h1 {
     }
 
     &__fig{
-        width: 100px;
+        width: 300px;
+        height: 400px;
+        // transform: 
+        //          translateY(-430px)  
+        //          translateX(100px); 
     }
 
     &__head {
