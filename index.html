@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <h1>Hangman game </h1>
+        <h1>Guess the country, else you hang! </h1>
+        <div class="result"></div>
     </header>
     <main>
         <section class="page">
@@ -19,12 +20,14 @@
                     <div class="hangman__vertical2"></div>                    
                 </div>                               
                 <div class="hangman__horizontal2"></div>
-                <div class="hangman__head"></div>
-                <div class="hangman__line--body"></div>
-                <div class="hangman__line--lefthand"></div>
-                <div class="hangman__line--righthand"></div>
-                <div class="hangman__line--rightleg"></div>
-                <div class="hangman__line--leftleg"></div> 
+                <div class="hangman__fig">
+                    <div id="hangman-1" class="hangman__head"></div>
+                    <div id="hangman-2" class="hangman__line hangman__line--body"></div>
+                    <div id="hangman-3" class="hangman__line hangman__line--lefthand"></div>
+                    <div id="hangman-4" class="hangman__line hangman__line--righthand"></div>
+                    <div id="hangman-5" class="hangman__line hangman__line--rightleg"></div>
+                    <div id="hangman-6" class="hangman__line hangman__line--leftleg"></div> 
+                </div>
             </section>
             <section class="container">
                 <div class="words">

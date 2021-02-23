@@ -12,7 +12,7 @@ h1 {
 }
 .hangman {
     // margin: 200px;
-    width: 300px;
+    width: 330px;
 
     &__poles {
         display:flex;
@@ -41,6 +41,10 @@ h1 {
         background-color: brown;
     }
 
+    &__fig{
+        width: 100px;
+    }
+
     &__head {
         height: 100px;
         width: 100px;
@@ -50,20 +54,22 @@ h1 {
                  translateY(-425px)  
                  translateX(185px); 
         position:relative;
+        display: none;
     }
 
     &__line {
         // width: 112px;
         // height: 45px;
         // border-bottom: 1px solid red;
-        position:absolute;
+        // position:absolute;
 
         &--body {
             height: 150px;
             border-left: 1px solid red;
             transform:
                     translateY(-425px)
-                    translateX(235px);                
+                    translateX(235px);  
+            display: none;              
         }
 
         &--lefthand {
@@ -76,6 +82,7 @@ h1 {
                     translateY(-550px)
                     translateX(233px)
                     rotate(46deg); 
+            display: none;
         }
         &--righthand {
             width: 112px;
@@ -87,6 +94,7 @@ h1 {
                     translateY(-562px)
                     translateX(160px)
                     rotate(130deg); 
+            display: none;
         }
         &--leftleg {
             width: 112px;
@@ -98,6 +106,7 @@ h1 {
                     translateY(-565px)
                     translateX(233px)
                     rotate(46deg); 
+            display: none;
         }
         &--rightleg {
             width: 112px;
@@ -109,6 +118,7 @@ h1 {
                     translateY(-485px)
                     translateX(160px)
                     rotate(130deg); 
+            display: none;
         }
 
     }
@@ -154,4 +164,10 @@ h1 {
         background-color:brown;
         color: white;
     }
+}
+
+.result {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;    
 }

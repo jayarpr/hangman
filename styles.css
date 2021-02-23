@@ -13,7 +13,7 @@ h1 {
 }
 
 .hangman {
-  width: 300px;
+  width: 330px;
 }
 .hangman__poles {
   display: flex;
@@ -38,6 +38,9 @@ h1 {
   width: 200px;
   background-color: brown;
 }
+.hangman__fig {
+  width: 100px;
+}
 .hangman__head {
   height: 100px;
   width: 100px;
@@ -45,38 +48,41 @@ h1 {
   border-radius: 50%;
   transform: translateY(-425px) translateX(185px);
   position: relative;
-}
-.hangman__line {
-  position: absolute;
+  display: none;
 }
 .hangman__line--body {
   height: 150px;
   border-left: 1px solid red;
   transform: translateY(-425px) translateX(235px);
+  display: none;
 }
 .hangman__line--lefthand {
   width: 112px;
   height: 45px;
   border-bottom: 1px solid red;
   transform: translateY(-550px) translateX(233px) rotate(46deg);
+  display: none;
 }
 .hangman__line--righthand {
   width: 112px;
   height: 45px;
   border-bottom: 1px solid red;
   transform: translateY(-562px) translateX(160px) rotate(130deg);
+  display: none;
 }
 .hangman__line--leftleg {
   width: 112px;
   height: 45px;
   border-bottom: 1px solid red;
   transform: translateY(-565px) translateX(233px) rotate(46deg);
+  display: none;
 }
 .hangman__line--rightleg {
   width: 112px;
   height: 45px;
   border-bottom: 1px solid red;
   transform: translateY(-485px) translateX(160px) rotate(130deg);
+  display: none;
 }
 
 .container {
@@ -119,4 +125,10 @@ h1 {
   width: 100px;
   background-color: brown;
   color: white;
+}
+
+.result {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
 }
