@@ -1,0 +1,135 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  margin: 100px 100px 100px 100px;
+  justify-content: space-evenly;
+}
+
+.hangman {
+  width: 330px;
+}
+.hangman__poles {
+  display: flex;
+}
+.hangman__vertical1 {
+  height: 500px;
+  width: 25px;
+  background-color: brown;
+}
+.hangman__vertical2 {
+  height: 100px;
+  width: 25px;
+  background-color: brown;
+}
+.hangman__horizontal1 {
+  height: 25px;
+  width: 200px;
+  background-color: brown;
+}
+.hangman__horizontal2 {
+  height: 25px;
+  width: 200px;
+  background-color: brown;
+}
+.hangman__fig {
+  width: 300px;
+  height: 400px;
+}
+.hangman__head {
+  height: 100px;
+  width: 100px;
+  border: 1px solid red;
+  border-radius: 50%;
+  transform: translateY(-425px) translateX(185px);
+  position: relative;
+  display: none;
+}
+.hangman__line--body {
+  height: 150px;
+  border-left: 1px solid red;
+  transform: translateY(-425px) translateX(235px);
+  display: none;
+}
+.hangman__line--lefthand {
+  width: 112px;
+  height: 45px;
+  border-bottom: 1px solid red;
+  transform: translateY(-550px) translateX(233px) rotate(46deg);
+  display: none;
+}
+.hangman__line--righthand {
+  width: 112px;
+  height: 45px;
+  border-bottom: 1px solid red;
+  transform: translateY(-562px) translateX(160px) rotate(130deg);
+  display: none;
+}
+.hangman__line--leftleg {
+  width: 112px;
+  height: 45px;
+  border-bottom: 1px solid red;
+  transform: translateY(-565px) translateX(233px) rotate(46deg);
+  display: none;
+}
+.hangman__line--rightleg {
+  width: 112px;
+  height: 45px;
+  border-bottom: 1px solid red;
+  transform: translateY(-485px) translateX(160px) rotate(130deg);
+  display: none;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px auto;
+  row-gap: 20px;
+}
+
+.words {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.letters {
+  display: grid;
+  height: 150px;
+  background-color: silver;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15px 15px 15px 15px;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.btn_letter {
+  width: 30px;
+  height: 30px;
+}
+
+.play_new {
+  text-align: center;
+}
+.play_new button {
+  height: 50px;
+  width: 100px;
+  background-color: brown;
+  color: white;
+}
+
+.result {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}

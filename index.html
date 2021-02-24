@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guess the country, else you hang! </h1>
+        <div class="result"></div>
+    </header>
+    <main>
+        <section class="page">
+            <section class="hangman">
+                <div class="hangman__poles">
+                    <div class="hangman__vertical1"></div>
+                    <div class="hangman__horizontal1"></div>
+                    <div class="hangman__vertical2"></div>                    
+                </div>                               
+                <div class="hangman__horizontal2"></div>
+                <div class="hangman__fig">
+                    <div id="hangman-1" class="hangman__head"></div>
+                    <div id="hangman-2" class="hangman__line hangman__line--body"></div>
+                    <div id="hangman-3" class="hangman__line hangman__line--lefthand"></div>
+                    <div id="hangman-4" class="hangman__line hangman__line--righthand"></div>
+                    <div id="hangman-5" class="hangman__line hangman__line--rightleg"></div>
+                    <div id="hangman-6" class="hangman__line hangman__line--leftleg"></div> 
+                </div>
+            </section>
+            <section class="container">
+                <div class="words">
+                    Placeholder for words
+                </div>
+                <div class="letters" id="letters">
+                
+                </div>
+                <div class="play_new">
+                    <button id="btnPlay">Play New</button>
+                </div>
+            </section>
+            
+            </section>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
