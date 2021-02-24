@@ -167,6 +167,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 window.addEventListener('load', (event) => {
     //create the buttons of Letters
     createButtons();
+    enableDisableLetters(true);
  });
 
 
